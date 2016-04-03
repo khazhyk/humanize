@@ -11,7 +11,7 @@ from .i18n import ngettext, gettext as _
 __all__ = ['naturaldelta', 'naturaltime', 'naturalday', 'naturaldate']
 
 def _now():
-    return datetime.now()
+    return datetime.utcnow()
 
 def abs_timedelta(delta):
     """Returns an "absolute" value for a timedelta, always representing a
